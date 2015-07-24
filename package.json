@@ -1,6 +1,6 @@
 {
   "name": "plex-api-headers",
-  "version": "1.0.0-1",
+  "version": "1.0.0-2",
   "description": "HTTP headers for plex-api and related modules",
   "main": "index.js",
   "scripts": {
