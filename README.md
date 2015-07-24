@@ -14,6 +14,9 @@ var client = new PlexAPI('localhost');
 
 var httpHeaders = headers(client);
 // -> { 'X-Plex-Device-Name': 'Node.js App', ... }
+
+// additional headers might be provided
+var jsonHeaders = headers(client, { 'Accept': 'application/json' });
 ```
 
 ## Contributing

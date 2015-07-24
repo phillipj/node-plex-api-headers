@@ -25,6 +25,14 @@ it('returns an object with X-Plex headers', function() {
     });
 });
 
+it('adds additional headers when provided as second argument', function() {
+    var client = new PlexAPI('localhost');
+
+    var createdHeaders = headers(client, { 'Accept': 'application/json' });
+
+    assert.equal(createdHeaders.Accept, 'application/json');
+});
+
 function startsWith(str, input) {
     return input.indexOf(str) === 0;
 }

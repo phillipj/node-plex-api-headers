@@ -1,12 +1,16 @@
 'use strict';
 
-module.exports = function headers(plexApi) {
+var extend = require('util')._extend;
+
+module.exports = function headers(plexApi, extraHeaders) {
     if (typeof plexApi !== 'object') {
         throw new TypeError('A PlexAPI object containing .options is required');
     }
 
     var options = plexApi.options;
-    return {
+    extraHeaders = extraHeaders || {};
+
+    return extend(extraHeaders, {
         'X-Plex-Client-Identifier': options.identifier,
         'X-Plex-Product': options.product,
         'X-Plex-Version': options.version,
@@ -15,5 +19,5 @@ module.exports = function headers(plexApi) {
         'X-Plex-Platform': options.platform,
         'X-Plex-Platform-Version': options.platformVersion,
         'X-Plex-Provides': 'controller'
-    };
+    });
 };
