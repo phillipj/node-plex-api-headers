@@ -33,6 +33,14 @@ it('adds additional headers when provided as second argument', function() {
     assert.equal(createdHeaders.Accept, 'application/json');
 });
 
+it('adds additional headers having string values', function() {
+    var client = new PlexAPI('localhost');
+
+    var createdHeaders = headers(client, { 'Not-wanted': null });
+
+    assert(!createdHeaders.hasOwnProperty('Not-existent'), '"Not-wanted" header was not added');
+});
+
 function startsWith(str, input) {
     return input.indexOf(str) === 0;
 }

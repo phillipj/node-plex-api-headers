@@ -26,6 +26,10 @@ If that feature is seen to fit this project, send a pull request with the change
 
 ## Changelog
 
+### v1.1.0
+
+- Only add additional headers which has string as their value.
+
 ### v1.0.0
 
 Initial release. Pretty much extracted as was when the code once existed in the plex-api module itself.
