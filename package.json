@@ -16,10 +16,10 @@
   "repository": "git://github.com/phillipj/node-plex-api-headers",
   "bugs": "https://github.com/phillipj/node-plex-api-headers/issues",
   "devDependencies": {
-    "jscs": "^1.13.1",
-    "jshint": "^2.8.0",
-    "mocha": "^2.2.5",
-    "plex-api": "^3.0.0"
+    "jscs": "1.13.1",
+    "jshint": "2.8.0",
+    "mocha": "2.3.3",
+    "plex-api": "3.2.0"
   },
   "engines": {
     "node": ">=0.10"
