@@ -3,7 +3,7 @@
 var extend = require('util')._extend;
 
 function withoutNulls(obj) {
-    return obj && Object.keys(obj).reduce(function(sum, curr) {
+    return obj && Object.keys(obj).reduce(function (sum, curr) {
         if (typeof obj[curr] === 'string') {
             sum[curr] = obj[curr];
         }
@@ -12,11 +12,12 @@ function withoutNulls(obj) {
 }
 
 module.exports = function headers(plexApi, extraHeaders) {
+    var options;
     if (typeof plexApi !== 'object') {
         throw new TypeError('A PlexAPI object containing .options is required');
     }
 
-    var options = plexApi.options;
+    options = plexApi.options;
     extraHeaders = withoutNulls(extraHeaders) || {};
 
     return extend(extraHeaders, {
