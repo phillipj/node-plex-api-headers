@@ -16,7 +16,7 @@
   "repository": "git://github.com/phillipj/node-plex-api-headers",
   "bugs": "https://github.com/phillipj/node-plex-api-headers/issues",
   "devDependencies": {
-    "jscs": "2.3.5",
+    "jscs": "2.4.0",
     "jshint": "2.8.0",
     "mocha": "2.3.3",
     "plex-api": "3.2.0"
