@@ -37,7 +37,7 @@ Initial release. Pretty much extracted as was when the code once existed in the 
 ## License
 (The MIT License)
 
-Copyright (c) 2015 Phillip Johnsen &lt;johphi@gmail.com&gt;
+Copyright (c) 2015-2018 Phillip Johnsen &lt;johphi@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
