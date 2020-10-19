@@ -24,7 +24,7 @@
     "@semantic-release/release-notes-generator": "^9.0.1",
     "eslint": "^7.11.0",
     "mocha": "^8.2.0",
-    "plex-api": "^3.2.0",
+    "plex-api": "^5.3.1",
     "semantic-release": "^17.2.1"
   },
   "engines": {
